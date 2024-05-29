@@ -1,3 +1,3 @@
 import "./style.css";
 
-console.log("Hell");
+alert("Restaurant Page");
