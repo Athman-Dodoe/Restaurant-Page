@@ -1,3 +1,3 @@
 import "./style.css";
 
-alert("Restaurant Page");
+alert("Restaurant page");
