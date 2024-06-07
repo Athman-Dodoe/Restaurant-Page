@@ -1,3 +1,6 @@
+import { loadHomePage } from "./homepage.js";
 import "./style.css";
 
-alert("Restaurant page");
+document.addEventListener('DOMContentLoaded', () => {
+    loadHomePage();
+});

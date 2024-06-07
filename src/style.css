@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,79 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #aaa; 
+    min-height: 100vh;
+    margin: 0;
+    background: url(./images/home.jpg) no-repeat center/cover;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-around;
+header {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 0;
+   text-align: center;
+   width: 100%;
 }
  
+nav button {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#content {
+    padding: 20px;
+}
+
+#content .home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5rem ;
+    gap: 2rem;
+    margin: auto;
+}
+
+#content .home-page .home-content {
+    text-align: center;
+    width: 45rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#content .home-page .home-content h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+
+#content .home-page .home-content p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    line-height: 2;
+    color:#fff;
+    
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+
+
